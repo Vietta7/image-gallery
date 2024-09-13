@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+}
+
+img {
+    max-width: 100%;
+}
+
+body {
+    font-family: "Open Sans", system-ui;
+    font-style: normal;
+}
+
+.container {
+    width: 80rem;
+    margin: 0 auto;
+    padding: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: #46344E;
+
+}
+
+.header-content {
+    display: flex;
+    align-items: center;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5rem;
+}
+
+h2 {
+    color: #FAED26;
+    font-size: 2rem;
+}
+
+.search {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.search input {
+    width: 100%;
+    padding-right: 2rem; 
+    padding-left: 0.5rem;
+    height: 2rem;
+    font-size: 1rem;
+    border-radius: 1.5rem;
+}
+
+.search-icon {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0.5rem;
+}
