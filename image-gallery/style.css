@@ -96,7 +96,7 @@ h2 {
 .gallery {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
-    margin: 2.5rem;
+    margin: 1rem;
 }
 
 .gallery-item {
@@ -133,12 +133,12 @@ h2 {
 }
 
 .footer-logo {
-    width: 3rem;
+    width: 3.5rem;
     height: auto;
 }
 
 .rs-logo {
-    width: 6rem;
+    width: 3.5rem;
 }
 
 .copy {
