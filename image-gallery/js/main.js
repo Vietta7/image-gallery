@@ -31,3 +31,32 @@ document.addEventListener('DOMContentLoaded', function () {
 
     getRandomImages();
 });
+
+// поиск, курсор ввода при загрузке страницы и крестик
+
+window.onload = function() {
+    const searchInput = document.getElementById('searchInput');
+    const searchIcon = document.querySelector('.search-icon');
+    const clearBtn = document.getElementById('clearBtn');
+
+    if (searchInput) {
+        searchInput.focus();
+    }
+
+    searchInput.addEventListener('input', function() {
+        if (searchInput.value.length > 0) {
+            clearBtn.style.display = 'inline'; 
+            searchIcon.style.display = 'none';
+        } else {
+            clearBtn.style.display = 'none'; 
+            searchIcon.style.display = 'inline'; 
+        }
+    });
+
+    clearBtn.addEventListener('click', function() {
+        searchInput.value = ''; 
+        searchInput.focus();
+        clearBtn.style.display = 'none'; 
+        searchIcon.style.display = 'inline';
+    });
+};
