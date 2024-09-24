@@ -90,3 +90,24 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 });
+
+// переход на темную тему
+
+document.addEventListener('DOMContentLoaded', function() {
+    const themeToggleBtn = document.getElementById('themeToggleBtn');
+    const body = document.body;
+
+    themeToggleBtn.addEventListener('click', function() {
+        body.classList.toggle('dark-theme');
+
+        const imgElement = themeToggleBtn.querySelector('img');
+
+        if (body.classList.contains('dark-theme')) {
+            imgElement.src = './img/icons/sun.svg'; 
+            imgElement.alt = 'sun';
+        } else {
+            imgElement.src = './img/icons/moon.svg'; 
+            imgElement.alt = 'moon';
+        }
+    });
+});

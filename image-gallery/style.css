@@ -18,7 +18,8 @@ img {
 body {
     font-family: "Open Sans", system-ui;
     font-style: normal;
-    background-color: #5A5560;
+    /* background-color: #5A5560; */
+    background-color: #9D8D8F;
     
 }
 
@@ -34,13 +35,19 @@ body {
     padding: 0;
 }
 
+.main-container {
+    width: 90rem;
+}
+
 /* header */
 
 .header {
     display: flex;
     width: 100%;
-    background-color: #46344E;
+    /* background-color: #46344E; */
+    background-color: #9B786F;
     padding: 1rem;
+    box-shadow: 0.3rem 0.4rem 0.4rem rgba(0, 0, 0, 0.4);
 }
 
 .header-content {
@@ -58,6 +65,14 @@ body {
     width: 2rem; 
     height: auto;
     margin-right: 0.625rem; 
+}
+
+.moonsun {
+    width: 3rem;
+    height: auto;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
 }
 
 h2 {
@@ -140,8 +155,11 @@ h2 {
 
 .footer {
     width: 100%;
-    background-color: #46344E;
+    background-color: #9B786F;
     padding: 1rem;
+    box-shadow:  0 -0.4rem 0.4rem rgba(0, 0, 0, 0.4);
+    z-index: 1;
+    position: relative;
 }
 
 .footer-container {
@@ -163,5 +181,21 @@ h2 {
     color: #FAED26;
     font-size: 1.2rem;
     letter-spacing: 0.05rem;
-    font-weight: 200;
+    font-weight: 900;
+}
+
+/* dark */
+
+.dark-theme header {
+    background-color: #463e44; 
+    position: relative; 
+    box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.5);
+}
+
+.dark-theme footer {
+    background-color: #463e44; 
+}
+
+body.dark-theme  {
+    background-color: #5A5560;
 }
