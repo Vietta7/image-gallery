@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wdth,wght@75..100,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/icons/favicon.png">
+    <link rel="stylesheet" href="style.css">
+    <title>Image Gallery</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!-- header -->
+        <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="header-icon">
+                    <img src="./img/icons/header-icon.svg" alt="header-icon">
+                    <h2>Unsplash API</h2>
+                </div>
+                <button class="moonsun" id="themeToggleBtn">
+                    <img src="./img/icons/moon.svg" alt="moon">
+                    <!-- <img src="./img/icons/sun.svg" alt="sun"> -->
+                </button>
+                <div class="search">
+                    <input id="searchInput" type="text" autocomplete="off" placeholder="Search ...">
+                    <span id="searchBtn" class="search-icon"><img src="./img/icons/search.svg" alt="search"></span>
+                    <button id="clearBtn" class="clear-btn">&#x2715;</button>
+                </div>
+            </div>
+        </div>
+        </header>
+        <!-- main -->
+        <main class="main">
+            <div class="container main-container">
+                <div class="gallery">
+                </div>
+            </div>
+        </main>
+        <!-- footer -->
+        <footer class="footer">
+            <div class="container footer-container">
+                <div class="footer-logo">
+                    <a href="https://github.com/Vietta7/">
+                        <img class="gh-image" src="./img/icons8-github.svg" alt="footer-logo">
+                    </a>
+                </div>
+                <div class="copy">&copy; 2024, Anna Belova</div>
+                <div class="rs-logo">
+                    <a href="https://rs.school/courses/javascript-preschool-ru">
+                        <img class="rs-image" src="./img/rss-logo-CM8B7fA7.svg" alt="rschool-logo">
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- js -->
+     <script src="./js/main.js"></script>
+</body>
+</html>
